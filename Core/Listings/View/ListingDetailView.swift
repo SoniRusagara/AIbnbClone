@@ -80,7 +80,7 @@ struct ListingDetailView: View {
                     HStack(spacing: 2){
                         Text("12 guests -")
                         Text("7 bedrooms -")
-                        Text("7 beds -")
+                        Text("9 beds -")
                         Text("8 baths")
                     }
                     .font(.caption)
@@ -88,7 +88,7 @@ struct ListingDetailView: View {
                 .frame(width: 300, alignment: .leading)
                 Spacer()
                 
-                Image("host-profile-photo")
+                Image("profile-soni")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 64, height: 64)

@@ -26,7 +26,7 @@ struct Listing: Identifiable, Codable {
     // more listing information
     var pricePerNight: Int
     var rating: Double
-    var imageUrls: [String]
+    var imageUrls: [String] // TODO: note when you integrate backend & APIs this will be actual image urls
     let latitude: Double
     let longitude: Double
     let address: String
@@ -83,6 +83,7 @@ enum ListingAmenities: Int, Codable, Identifiable, Hashable {
     case alarmSystem
     case office
     case balcony
+    case gym
     
     // title associated with each option
     var title: String {
@@ -95,6 +96,7 @@ enum ListingAmenities: Int, Codable, Identifiable, Hashable {
         case .alarmSystem: return "Alarm System"
         case .office: return "Office"
         case .balcony: return "Balcony"
+        case .gym: return "Gym"
         }
     }
     
@@ -109,6 +111,7 @@ enum ListingAmenities: Int, Codable, Identifiable, Hashable {
         case .alarmSystem: return "checkerboard.shield"
         case .office: return "pencil.and.ruler.fill"
         case .balcony: return "building"
+        case .gym: return "dumbbell"
         }
     }
     
