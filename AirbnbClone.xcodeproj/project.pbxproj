@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C7D3FE32E379CC300CEE348 /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D3FE22E379CC200CEE348 /* ListingDetailView.swift */; };
+		1C7D3FE52E37D5A500CEE348 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D3FE42E37D5A500CEE348 /* Listing.swift */; };
 		1CE931272E36714200CDEB85 /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE931262E36714200CDEB85 /* DestinationSearchView.swift */; };
 		1CE9312B2E36DE4200CDEB85 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9312A2E36DE4200CDEB85 /* ProfileView.swift */; };
 		1CE9312D2E36E83A00CDEB85 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9312C2E36E83A00CDEB85 /* ProfileOptionRowView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1C7D3FE22E379CC200CEE348 /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
+		1C7D3FE42E37D5A500CEE348 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		1CE931262E36714200CDEB85 /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 		1CE9312A2E36DE4200CDEB85 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1CE9312C2E36E83A00CDEB85 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		1CE931322E37215100CDEB85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1C7D3FE42E37D5A500CEE348 /* Listing.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				1CE9312D2E36E83A00CDEB85 /* ProfileOptionRowView.swift in Sources */,
 				1CE931272E36714200CDEB85 /* DestinationSearchView.swift in Sources */,
 				1CFAE5062E3473C500A0B9AE /* ListingItemView.swift in Sources */,
+				1C7D3FE52E37D5A500CEE348 /* Listing.swift in Sources */,
 				1CFAE5042E346A2F00A0B9AE /* ExploreView.swift in Sources */,
 				1CFAE5102E34A55700A0B9AE /* SearchAndFilterBar.swift in Sources */,
 				1CE9312F2E36E99400CDEB85 /* WishlistView.swift in Sources */,
