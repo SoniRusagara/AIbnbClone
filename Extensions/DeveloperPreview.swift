@@ -49,7 +49,7 @@ class DeveloperPreview {
             numberOfBeds: 2,
             pricePerNight: 224,
             rating: 4.83,
-            imageUrls: ["listing-1", "listing-2", "listing-3", "listing-4"], //TODO: add pics
+            imageUrls: ["listing1-1", "listing1-2", "listing1-3", "listing1-4"], //TODO: add pics
             latitude: 120.3782,
             longitude: -50.8648,
             address: "21 Bayview Drive",
@@ -66,14 +66,14 @@ class DeveloperPreview {
             id: NSUUID().uuidString,
             ownerUid: NSUUID().uuidString,
             ownerName: "Pam Beesly",
-            ownerImageUrl: "profile-pam",  //TODO: add pic
+            ownerImageUrl: "profile-pam",  
             numberOfBedrooms: 3,
             numberOfBathrooms: 2,
             numberOfGuests: 8,
             numberOfBeds: 4,
             pricePerNight: 194,
             rating: 4.90,
-            imageUrls: ["listing-1", "listing-2", "listing-3", "listing-4"],  //TODO: add pics
+            imageUrls: ["listing2-1", "listing2-2", "listing2-3", "listing2-4"],  //TODO: add pics
             latitude: 5.0124,
             longitude: -70.4896,
             address: "Wilton Manors",
