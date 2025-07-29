@@ -10,7 +10,7 @@ import Foundation
 /**
  A data model that represents what a Listing looks like in the app.
  */
-struct Listing: Identifiable, Codable {
+struct Listing: Identifiable, Codable, Hashable {
     let id: String
     // Info for the Owner of the Listing
     let ownerUid: String
@@ -59,7 +59,7 @@ enum ListingFeatures: Int, Codable, Identifiable, Hashable {
     var subtitle: String {
         switch self {
         case .selfCheckIn: return "Check yourself in with the keypad."
-        case .superHost: return "Superhosts are experienced, highly rated hosts who are commited to providing great experiences for their guests."
+        case .superHost: return "Superhosts are experienced hosts who consistently go above and beyond to ensure their listings are clean, safe, and welcoming."
         }
     }
     

@@ -8,28 +8,22 @@
 import SwiftUI
 
 struct ListingImageCarouselView: View {
-    // array for mock data for images
-    var Images = [
-        "listing-1",
-        "listing-2",
-        "listing-3",
-        "listing-4"
-    ]
-    
-    
+    // populate with a listing
+    let listing: Listing
+
     var body: some View {
         // images
         TabView{
-            ForEach(Images, id: \.self){ image in
+            ForEach(listing.imageUrls, id: \.self){ image in
                 Image(image)
                     .resizable()
                     .scaledToFill()
             }
         }
-            .tabViewStyle(.page)
+        .tabViewStyle(.page)
     }
 }
 
 #Preview {
-    ListingImageCarouselView()
+    ListingImageCarouselView(listing: DeveloperPreview.shared.listings[0])
 }

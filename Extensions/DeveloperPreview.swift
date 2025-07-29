@@ -10,7 +10,10 @@ import Foundation
 
 // TODO: Add atleast 5 items for this array to fill in mock data 
 class DeveloperPreview {
-    // array of Listings 
+    // creating a static shared instance
+    static let shared = DeveloperPreview()
+    
+    // array of Listings
     var listings: [Listing] = [
         .init(
             id: NSUUID().uuidString,
