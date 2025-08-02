@@ -16,12 +16,12 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack {
             if showDestinationSearchView {
-                DestinationSearchView(show: $showDestinationSearchView)
+                DestinationSearchView(show: $showDestinationSearchView, viewModel: viewModel)
             } else {
                 ScrollView {
                     // NOTE: I put ScrollView in VStack to make SearchAndFilterBar sticky
                     
-                    SearchAndFilterBar() // adding search bar to Explore page
+                    SearchAndFilterBar(location: $viewModel.searchLocation) // adding search bar to Explore page
                         .onTapGesture {
                             withAnimation(.snappy) {
                                 showDestinationSearchView.toggle()
