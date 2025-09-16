@@ -7,18 +7,27 @@ Highlight: First audio < 400 ms, p95 < 1.5 s; > 99% assistant reliability.
 Features
 
 🗺️ Explore, region search, listing detail, booking flow (mock data)
+
 🎙️ AI Voice Assistant: speech-to-AI-to-speech pipeline
+
 🔐 Sign in with Apple + Keychain (scaffold)
+
 🧩 MVVM, Swift Concurrency (async/await, cancellation/backoff)
+
 🗃️ (Planned) Firestore for profiles, bookings, preferences
+
 🔔 (Planned) Push notifications & TestFlight demo
 
 Tech Stack
 
 Language: Swift (iOS 17)
+
 UI: SwiftUI, MapKit
+
 Arch: MVVM, Repository pattern
+
 AI: STT/LLM/TTS pipeline (pluggable client)
+
 Optional: Firebase (Auth, Firestore, Storage)
 
 Build: Xcode 15
@@ -38,6 +47,12 @@ Info.plist (for voice)
 <string>Mic for voice input</string>
 <key>NSSpeechRecognitionUsageDescription</key>
 <string>Transcribe speech to text</string>
+
+Notes
+
+Modular repos let you swap Local → Firebase without UI changes.
+
+Sign in with Apple scaffolded; Firebase Auth wiring planned in Future Work.
 
 License
 
