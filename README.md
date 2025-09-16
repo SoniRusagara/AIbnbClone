@@ -1,14 +1,14 @@
 AIbnb (SwiftUI, AI Voice Assistant)
 
-A lightweight Airbnb-style iOS app built with SwiftUI. Includes Explore/Search/Listing flows and an AI voice assistant (mic → ASR → LLM → TTS). Designed to run locally today and grow into a Firebase-backed product.
+A lightweight Airbnb-style iOS app built with SwiftUI. It features Explore/Search/Listing flows with booking and an AI voice assistant pipeline (mic → ASR → LLM → TTS). Designed to run locally today and scale into a Firebase-backed product.
 
-Highlight: First audio < 400 ms, p95 < 1.5 s; > 99% assistant reliability.
+Highlight: First audio < 400 ms, p95 < 1.5 s, > 99% reliability.
 
 Features
 
-🗺️ Explore, region search, listing detail, booking flow (mock data)
+🗺️ Explore view, region search, listing detail, booking flow (mock data)
 
-🎙️ AI Voice Assistant: speech-to-AI-to-speech pipeline
+🎙️ AI Voice Assistant (speech-to-AI-to-speech pipeline)
 
 🔐 Sign in with Apple + Keychain (scaffold)
 
@@ -24,7 +24,7 @@ Language: Swift (iOS 17)
 
 UI: SwiftUI, MapKit
 
-Arch: MVVM, Repository pattern
+Architecture: MVVM + Repository pattern
 
 AI: STT/LLM/TTS pipeline (pluggable client)
 
@@ -35,7 +35,9 @@ Build: Xcode 15
 Getting Started
 Requirements
 
-Xcode 15 (iOS 17 simulator or device)
+Xcode 15
+
+iOS 17 simulator or device
 
 Run
 git clone https://github.com/<your-username>/AIbnb.git
