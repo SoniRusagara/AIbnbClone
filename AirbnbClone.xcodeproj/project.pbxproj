@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C738B3C2E78B6E600F49CD1 /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 1C738B3B2E78B6E600F49CD1 /* XCAOpenAIClient */; };
+		1C738B3F2E78B72F00F49CD1 /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = 1C738B3E2E78B72F00F49CD1 /* SiriWaveView */; };
+		1C738B432E79450100F49CD1 /* AssistantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C738B422E79450100F49CD1 /* AssistantModel.swift */; };
+		1C738B452E7945FF00F49CD1 /* VoiceAssistantModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C738B442E7945FF00F49CD1 /* VoiceAssistantModels.swift */; };
+		1C738B472E79466500F49CD1 /* AssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C738B462E79466500F49CD1 /* AssistantView.swift */; };
 		1C7D3FE32E379CC300CEE348 /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D3FE22E379CC200CEE348 /* ListingDetailView.swift */; };
 		1C7D3FE52E37D5A500CEE348 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D3FE42E37D5A500CEE348 /* Listing.swift */; };
 		1C7D3FE72E37E04100CEE348 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D3FE62E37E04100CEE348 /* DeveloperPreview.swift */; };
@@ -25,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C738B422E79450100F49CD1 /* AssistantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantModel.swift; sourceTree = "<group>"; };
+		1C738B442E7945FF00F49CD1 /* VoiceAssistantModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantModels.swift; sourceTree = "<group>"; };
+		1C738B462E79466500F49CD1 /* AssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantView.swift; sourceTree = "<group>"; };
 		1C7D3FE22E379CC200CEE348 /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
 		1C7D3FE42E37D5A500CEE348 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		1C7D3FE62E37E04100CEE348 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
@@ -43,9 +51,22 @@
 		1CFAE5162E3501C700A0B9AE /* ListingImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingImageCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1C738B412E78B79D00F49CD1 /* Exceptions for "AirbnbClone" folder in "AirbnbClone" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1CFAE4DD2E3465FF00A0B9AE /* AirbnbClone */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1CFAE4E02E3465FF00A0B9AE /* AirbnbClone */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1C738B412E78B79D00F49CD1 /* Exceptions for "AirbnbClone" folder in "AirbnbClone" target */,
+			);
 			path = AirbnbClone;
 			sourceTree = "<group>";
 		};
@@ -56,12 +77,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C738B3C2E78B6E600F49CD1 /* XCAOpenAIClient in Frameworks */,
+				1C738B3F2E78B72F00F49CD1 /* SiriWaveView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C738AFF2E78AB1700F49CD1 /* VoiceAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				1C738B012E78AB3B00F49CD1 /* Model */,
+				1C738B002E78AB3400F49CD1 /* View */,
+			);
+			path = VoiceAssistant;
+			sourceTree = "<group>";
+		};
+		1C738B002E78AB3400F49CD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C738B462E79466500F49CD1 /* AssistantView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C738B012E78AB3B00F49CD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C738B422E79450100F49CD1 /* AssistantModel.swift */,
+				1C738B442E7945FF00F49CD1 /* VoiceAssistantModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1C7D40272E394B5B00CEE348 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +208,7 @@
 		1CFAE4FB2E3468B700A0B9AE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1C738AFF2E78AB1700F49CD1 /* VoiceAssistant */,
 				1CFAE5152E3501A800A0B9AE /* Components */,
 				1CFAE4FC2E3468F100A0B9AE /* Explore */,
 				1CFAE4FD2E34690300A0B9AE /* Listings */,
@@ -257,6 +307,8 @@
 			);
 			name = AirbnbClone;
 			packageProductDependencies = (
+				1C738B3B2E78B6E600F49CD1 /* XCAOpenAIClient */,
+				1C738B3E2E78B72F00F49CD1 /* SiriWaveView */,
 			);
 			productName = AirbnbClone;
 			productReference = 1CFAE4DE2E3465FF00A0B9AE /* AirbnbClone.app */;
@@ -286,6 +338,10 @@
 			);
 			mainGroup = 1CFAE4D52E3465FF00A0B9AE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C738B3A2E78B6E600F49CD1 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
+				1C738B3D2E78B72F00F49CD1 /* XCRemoteSwiftPackageReference "SiriWaveView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1CFAE4DF2E3465FF00A0B9AE /* Products */;
 			projectDirPath = "";
@@ -312,6 +368,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CFAE5172E3501C700A0B9AE /* ListingImageCarouselView.swift in Sources */,
+				1C738B432E79450100F49CD1 /* AssistantModel.swift in Sources */,
+				1C738B472E79466500F49CD1 /* AssistantView.swift in Sources */,
 				1CE9312B2E36DE4200CDEB85 /* ProfileView.swift in Sources */,
 				1CE9312D2E36E83A00CDEB85 /* ProfileOptionRowView.swift in Sources */,
 				1CE931272E36714200CDEB85 /* DestinationSearchView.swift in Sources */,
@@ -324,6 +382,7 @@
 				1CE9312F2E36E99400CDEB85 /* WishlistView.swift in Sources */,
 				1C7D3FE32E379CC300CEE348 /* ListingDetailView.swift in Sources */,
 				1CE931312E36EBA900CDEB85 /* MainTabView.swift in Sources */,
+				1C738B452E7945FF00F49CD1 /* VoiceAssistantModels.swift in Sources */,
 				1C7D3FE72E37E04100CEE348 /* DeveloperPreview.swift in Sources */,
 				1C7D40562E394D2200CEE348 /* ExploreService.swift in Sources */,
 			);
@@ -461,11 +520,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AirbnbClone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirbnbClone/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Detect and control nearby accessories.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone for the AI Assistant";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,11 +552,15 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AirbnbClone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirbnbClone/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Detect and control nearby accessories.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone for the AI Assistant";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +596,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C738B3A2E78B6E600F49CD1 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAOpenAIClient.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		1C738B3D2E78B72F00F49CD1 /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C738B3B2E78B6E600F49CD1 /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C738B3A2E78B6E600F49CD1 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
+			productName = XCAOpenAIClient;
+		};
+		1C738B3E2E78B72F00F49CD1 /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C738B3D2E78B72F00F49CD1 /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CFAE4D62E3465FF00A0B9AE /* Project object */;
 }

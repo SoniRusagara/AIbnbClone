@@ -3,7 +3,7 @@
 //  AirbnbClone
 //
 //  Created by Soni Rusagara on 7/27/25.
-//
+
 
 import SwiftUI
 
@@ -13,14 +13,21 @@ struct MainTabView: View {
             ExploreView()
                 .tabItem { Label("Explore", systemImage: "magnifyingglass")}
             
+            
             WishlistView()
                 .tabItem { Label("Wishlists", systemImage: "heart")}
+            
+            // TODO: Add assistant tab
+            AssistantView()
+                .tabItem { Label("Assistant", systemImage: "mic") }
             
             ProfileView()
                 .tabItem { Label("Profile", systemImage: "person")}
         }
     }
 }
+
+//TODO: add api 
 
 #Preview {
     MainTabView()

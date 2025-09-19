@@ -3,7 +3,8 @@
 //  AirbnbClone
 //
 //  Created by Soni Rusagara on 7/25/25.
-//
+// todo: add AIAssistant
+// 
 
 import SwiftUI
 

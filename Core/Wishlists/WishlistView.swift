@@ -29,7 +29,7 @@ struct WishlistView: View {
                         .foregroundStyle(.white)
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                        .frame(width: 360, height: 4)
+                        .frame(width: 360, height: 44)
                         .background(.pink)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
