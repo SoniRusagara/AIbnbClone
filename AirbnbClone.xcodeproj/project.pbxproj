@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0C035E2E7EDEEC0095BF27 /* SmartLockProximityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C035D2E7EDEEC0095BF27 /* SmartLockProximityManager.swift */; };
+		1C0C03602E7EDF530095BF27 /* SmartLockBleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C035F2E7EDF530095BF27 /* SmartLockBleManager.swift */; };
+		1C0C03622E7EDFC10095BF27 /* SmartLockCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0C03612E7EDFC10095BF27 /* SmartLockCard.swift */; };
 		1C738B3C2E78B6E600F49CD1 /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 1C738B3B2E78B6E600F49CD1 /* XCAOpenAIClient */; };
 		1C738B3F2E78B72F00F49CD1 /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = 1C738B3E2E78B72F00F49CD1 /* SiriWaveView */; };
 		1C738B432E79450100F49CD1 /* AssistantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C738B422E79450100F49CD1 /* AssistantModel.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0C035D2E7EDEEC0095BF27 /* SmartLockProximityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLockProximityManager.swift; sourceTree = "<group>"; };
+		1C0C035F2E7EDF530095BF27 /* SmartLockBleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLockBleManager.swift; sourceTree = "<group>"; };
+		1C0C03612E7EDFC10095BF27 /* SmartLockCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLockCard.swift; sourceTree = "<group>"; };
 		1C738B422E79450100F49CD1 /* AssistantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantModel.swift; sourceTree = "<group>"; };
 		1C738B442E7945FF00F49CD1 /* VoiceAssistantModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantModels.swift; sourceTree = "<group>"; };
 		1C738B462E79466500F49CD1 /* AssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantView.swift; sourceTree = "<group>"; };
@@ -85,6 +91,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0C035C2E7EDED00095BF27 /* SmartLock */ = {
+			isa = PBXGroup;
+			children = (
+				1C0C035D2E7EDEEC0095BF27 /* SmartLockProximityManager.swift */,
+				1C0C035F2E7EDF530095BF27 /* SmartLockBleManager.swift */,
+				1C0C03612E7EDFC10095BF27 /* SmartLockCard.swift */,
+			);
+			path = SmartLock;
+			sourceTree = "<group>";
+		};
 		1C738AFF2E78AB1700F49CD1 /* VoiceAssistant */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +201,7 @@
 		1CFAE4F82E34685800A0B9AE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1CFAE5152E3501A800A0B9AE /* Components */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -208,8 +225,8 @@
 		1CFAE4FB2E3468B700A0B9AE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1C0C035C2E7EDED00095BF27 /* SmartLock */,
 				1C738AFF2E78AB1700F49CD1 /* VoiceAssistant */,
-				1CFAE5152E3501A800A0B9AE /* Components */,
 				1CFAE4FC2E3468F100A0B9AE /* Explore */,
 				1CFAE4FD2E34690300A0B9AE /* Listings */,
 				1CFAE4FE2E34691A00A0B9AE /* MapView */,
@@ -370,15 +387,18 @@
 				1CFAE5172E3501C700A0B9AE /* ListingImageCarouselView.swift in Sources */,
 				1C738B432E79450100F49CD1 /* AssistantModel.swift in Sources */,
 				1C738B472E79466500F49CD1 /* AssistantView.swift in Sources */,
+				1C0C035E2E7EDEEC0095BF27 /* SmartLockProximityManager.swift in Sources */,
 				1CE9312B2E36DE4200CDEB85 /* ProfileView.swift in Sources */,
 				1CE9312D2E36E83A00CDEB85 /* ProfileOptionRowView.swift in Sources */,
 				1CE931272E36714200CDEB85 /* DestinationSearchView.swift in Sources */,
 				1CFAE5062E3473C500A0B9AE /* ListingItemView.swift in Sources */,
+				1C0C03602E7EDF530095BF27 /* SmartLockBleManager.swift in Sources */,
 				1C7D3FE52E37D5A500CEE348 /* Listing.swift in Sources */,
 				1C7D40542E394C1700CEE348 /* ExploreViewModel.swift in Sources */,
 				1C7D40582E3973A300CEE348 /* Regions.swift in Sources */,
 				1CFAE5042E346A2F00A0B9AE /* ExploreView.swift in Sources */,
 				1CFAE5102E34A55700A0B9AE /* SearchAndFilterBar.swift in Sources */,
+				1C0C03622E7EDFC10095BF27 /* SmartLockCard.swift in Sources */,
 				1CE9312F2E36E99400CDEB85 /* WishlistView.swift in Sources */,
 				1C7D3FE32E379CC300CEE348 /* ListingDetailView.swift in Sources */,
 				1CE931312E36EBA900CDEB85 /* MainTabView.swift in Sources */,

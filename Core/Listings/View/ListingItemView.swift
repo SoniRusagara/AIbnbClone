@@ -10,7 +10,7 @@ import SwiftUI
 // the item view for each listing
 struct ListingItemView: View {
     let listing: Listing
-    
+
     
     var body: some View {
         VStack(spacing: 8) {
@@ -59,5 +59,5 @@ struct ListingItemView: View {
 }
 
 #Preview {
-    ListingItemView(listing: DeveloperPreview.shared.listings[0])
+    //ListingItemView(listing: DeveloperPreview.shared.listings[0])
 }
