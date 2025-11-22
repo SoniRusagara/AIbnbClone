@@ -4,7 +4,6 @@
 
 A lightweight Airbnb-style iOS app built with SwiftUI. It features Explore/Search/Listing flows with booking and an **AI voice assistant pipeline** (mic → ASR → LLM → TTS). Designed to run locally today and scale into a Firebase-backed product.
 
-
 **Highlight:** First audio < **400 ms**, p95 < **1.5 s**, > **99%** reliability.
 
 ---
