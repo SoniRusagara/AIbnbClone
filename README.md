@@ -73,7 +73,7 @@ cd AIbnb
 
 ## License
 
-MIT (or your preference)
+MIT
 
 ---
 
