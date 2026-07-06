@@ -12,6 +12,9 @@ A lightweight Airbnb-style iOS app built with SwiftUI. It features Explore/Searc
 
 
 
+
+
+
 **Highlight:** First audio < **400 ms**, p95 < **1.5 s**, > **99%** reliability.
 
 ---
